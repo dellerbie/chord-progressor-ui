@@ -50,4 +50,19 @@
   return self;
 }
 
+- (void)setHighlighted:(BOOL)highlighted
+{
+  NSLog(@"setHighlighted: %hhd", highlighted);
+  if(highlighted)
+  {
+    self.backgroundColor = CHORD_BG_COLOR;
+  }
+  else
+  {
+    self.backgroundColor = BLACK_COLOR;
+  }
+  
+  [self setNeedsDisplay];
+}
+
 @end

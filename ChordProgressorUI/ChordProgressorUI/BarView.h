@@ -11,6 +11,8 @@
 
 @interface BarView : UIView
 
+@property(nonatomic, getter=isHighlighted) BOOL highlighted;
+
 @property (nonatomic, strong) ChordButton *chordOneButton;
 @property (nonatomic, strong) ChordButton *chordTwoButton;
 @property (nonatomic, strong) ChordButton *chordThreeButton;
