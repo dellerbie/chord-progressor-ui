@@ -11,7 +11,6 @@
 
 #define LEFT_RIGHT_PADDING (8.0)
 #define CHORD_SPACING (3.0)
-#define STROKE_SIZE (2.0)
 #define CHORD_BUTTON_SIZE (78.0)
 
 @implementation BarView
@@ -22,7 +21,7 @@
   if(self)
   {
     self.layer.borderColor = [STROKE_COLOR CGColor];
-    self.layer.borderWidth = STROKE_SIZE;
+    self.layer.borderWidth = DEFAULT_STROKE_SIZE;
     
     CGFloat buttonX = LEFT_RIGHT_PADDING;
     CGFloat buttonY = (self.frame.origin.y + (self.frame.size.height / 2)) - CHORD_BUTTON_SIZE;

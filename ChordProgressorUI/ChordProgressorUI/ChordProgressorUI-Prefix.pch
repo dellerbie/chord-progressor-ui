@@ -19,6 +19,11 @@
 #define HEIGHT(height) ceilf((height / 640.0) * 320.0)
 #define WIDTH(width) ceilf((width / 1136.0) * 568.0)
 
+#define DEFAULT_FONT_SIZE (16.0)
+#define DEFAULT_STROKE_SIZE (2.0)
+
+#define DEFAULT_FONT [UIFont fontWithName:@"AvenirNextCondensed-Medium" size:DEFAULT_FONT_SIZE]
+
 #define MAIN_BG_COLOR [UIColor colorWithRed:TO_RGB(46) green:TO_RGB(46) blue:TO_RGB(46) alpha:1.0]
 #define BLACK_COLOR [UIColor colorWithRed:TO_RGB(0) green:TO_RGB(0) blue:TO_RGB(0) alpha:1.0]
 #define STROKE_COLOR [UIColor colorWithRed:TO_RGB(54) green:TO_RGB(54) blue:TO_RGB(54) alpha:1.0]
@@ -28,5 +33,6 @@
 #define WHITE_COLOR [UIColor colorWithRed:TO_RGB(255) green:TO_RGB(255) blue:TO_RGB(255) alpha:1.0]
 #define TOOLBAR_FONT_COLOR [UIColor colorWithRed:TO_RGB(125) green:TO_RGB(125) blue:TO_RGB(125) alpha:1.0]
 #define CHORD_EDITOR_STROKE_COLOR [UIColor colorWithRed:TO_RGB(172) green:TO_RGB(172) blue:TO_RGB(172) alpha:1.0]
+#define CHORD_EDITOR_FONT_COLOR [UIColor colorWithRed:TO_RGB(178) green:TO_RGB(178) blue:TO_RGB(178) alpha:1.0]
 
 

@@ -8,14 +8,6 @@
 
 #import "ChordButton.h"
 
-#define FONT_SIZE (16)
-#define STROKE_SIZE (2.0)
-
-@interface ChordButton ()
-@property (nonatomic, strong) UIColor *strokeColor;
-@property (nonatomic, strong) UIColor *fillColor;
-@end
-
 @implementation ChordButton
 
 - (id)initWithFrame:(CGRect)frame
@@ -25,7 +17,25 @@
   {
     self.fillColor = CHORD_BG_COLOR;
     self.strokeColor = STROKE_COLOR;
-    self.titleLabel.font = [UIFont fontWithName:@"AvenirNextCondensed-Medium" size:FONT_SIZE];
+    self.strokeSize = DEFAULT_STROKE_SIZE;
+    self.fontSize = DEFAULT_FONT_SIZE;
+    self.titleLabel.font = DEFAULT_FONT;
+    [self setTitleColor:MAIN_FONT_COLOR forState:UIControlStateNormal];
+    [self setTitleColor:WHITE_COLOR forState:UIControlStateHighlighted];
+  }
+  return self;
+}
+
+- (id)initWithFrame:(CGRect)frame fillColor:(UIColor *)fillColor strokeColor:(UIColor *)strokeColor strokeSize:(CGFloat)strokeSize fontSize:(CGFloat)fontSize
+{
+  self = [super initWithFrame:frame];
+  if(self)
+  {
+    self.fillColor = fillColor;
+    self.strokeColor = strokeColor;
+    self.strokeSize = strokeSize;
+    self.fontSize = fontSize;
+    self.titleLabel.font = [UIFont fontWithName:@"AvenirNextCondensed-Medium" size:self.fontSize];
     [self setTitleColor:MAIN_FONT_COLOR forState:UIControlStateNormal];
     [self setTitleColor:WHITE_COLOR forState:UIControlStateHighlighted];
   }
@@ -37,7 +47,7 @@
   CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
   CGContextRef context = UIGraphicsGetCurrentContext();
   
-  CGRect buttonRect = CGRectMake(self.bounds.origin.x + STROKE_SIZE, self.bounds.origin.y + STROKE_SIZE, self.bounds.size.width - STROKE_SIZE * 2, self.bounds.size.height - STROKE_SIZE * 2);
+  CGRect buttonRect = CGRectMake(self.bounds.origin.x + self.strokeSize, self.bounds.origin.y + self.strokeSize, self.bounds.size.width - self.strokeSize * 2, self.bounds.size.height - self.strokeSize * 2);
   
   CGContextSaveGState(context);
   
@@ -60,7 +70,7 @@
   if(!self.isHighlighted)
   {
     [self.strokeColor setStroke];
-    [circleShapePath setLineWidth:STROKE_SIZE];
+    [circleShapePath setLineWidth:self.strokeSize];
     [circleShapePath stroke];
   }
 
@@ -71,6 +81,12 @@
 {
   [super setHighlighted:highlighted];
   [self setNeedsDisplay];
+}
+
+- (void)setFontSize:(CGFloat)fontSize
+{
+  _fontSize = fontSize;
+  self.titleLabel.font = [UIFont fontWithName:@"AvenirNextCondensed-Medium" size:_fontSize];
 }
 
 @end

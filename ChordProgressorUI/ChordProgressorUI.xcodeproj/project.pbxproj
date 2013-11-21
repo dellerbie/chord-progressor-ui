@@ -24,6 +24,8 @@
 		CEFC2594183D838F00E3565A /* BarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC2593183D838F00E3565A /* BarView.m */; };
 		CEFC2596183D85B200E3565A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC2595183D85B200E3565A /* QuartzCore.framework */; };
 		CEFC2599183D8A1A00E3565A /* ChordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC2598183D8A1A00E3565A /* ChordButton.m */; };
+		CEFC259C183E964D00E3565A /* ChordEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC259B183E964D00E3565A /* ChordEditorView.m */; };
+		CEFC259F183E9A2900E3565A /* CPRoundedRectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC259E183E9A2900E3565A /* CPRoundedRectButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		CEFC2595183D85B200E3565A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CEFC2597183D8A1A00E3565A /* ChordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChordButton.h; sourceTree = "<group>"; };
 		CEFC2598183D8A1A00E3565A /* ChordButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChordButton.m; sourceTree = "<group>"; };
+		CEFC259A183E964D00E3565A /* ChordEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChordEditorView.h; sourceTree = "<group>"; };
+		CEFC259B183E964D00E3565A /* ChordEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChordEditorView.m; sourceTree = "<group>"; };
+		CEFC259D183E9A2900E3565A /* CPRoundedRectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPRoundedRectButton.h; sourceTree = "<group>"; };
+		CEFC259E183E9A2900E3565A /* CPRoundedRectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPRoundedRectButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,10 @@
 				CEFC2593183D838F00E3565A /* BarView.m */,
 				CEFC2597183D8A1A00E3565A /* ChordButton.h */,
 				CEFC2598183D8A1A00E3565A /* ChordButton.m */,
+				CEFC259A183E964D00E3565A /* ChordEditorView.h */,
+				CEFC259B183E964D00E3565A /* ChordEditorView.m */,
+				CEFC259D183E9A2900E3565A /* CPRoundedRectButton.h */,
+				CEFC259E183E9A2900E3565A /* CPRoundedRectButton.m */,
 			);
 			path = ChordProgressorUI;
 			sourceTree = "<group>";
@@ -265,6 +275,8 @@
 			files = (
 				CEFC2594183D838F00E3565A /* BarView.m in Sources */,
 				CEFC2574183D831A00E3565A /* ViewController.m in Sources */,
+				CEFC259F183E9A2900E3565A /* CPRoundedRectButton.m in Sources */,
+				CEFC259C183E964D00E3565A /* ChordEditorView.m in Sources */,
 				CEFC256E183D831A00E3565A /* AppDelegate.m in Sources */,
 				CEFC2599183D8A1A00E3565A /* ChordButton.m in Sources */,
 				CEFC256A183D831A00E3565A /* main.m in Sources */,

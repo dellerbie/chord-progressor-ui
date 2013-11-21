@@ -9,6 +9,12 @@
 #import "ViewController.h"
 #import "BarView.h"
 #import "ChordButton.h"
+#import "ChordEditorView.h"
+
+#define BAR_HEIGHT HEIGHT(360)
+#define BAR_WIDTH WIDTH(145)
+#define CHORD_EDITOR_HEIGHT HEIGHT(387)
+#define CHORD_EDITOR_WIDTH WIDTH(387)
 
 @implementation ViewController
 
@@ -16,8 +22,11 @@
 {
   [super viewDidLoad];
   
-  BarView *barView = [[BarView alloc] initWithFrame:CGRectMake(60, 60, HEIGHT(360), WIDTH(145))];
+  BarView *barView = [[BarView alloc] initWithFrame:CGRectMake(60, 60, BAR_HEIGHT, BAR_WIDTH)];
   [[self view] addSubview:barView];
+  
+  ChordEditorView *chordEditorView = [[ChordEditorView alloc] initWithFrame:CGRectMake(260, 60, CHORD_EDITOR_WIDTH, CHORD_EDITOR_HEIGHT)];
+  [[self view] addSubview:chordEditorView];
   
   self.view.backgroundColor = BLACK_COLOR;
 }
