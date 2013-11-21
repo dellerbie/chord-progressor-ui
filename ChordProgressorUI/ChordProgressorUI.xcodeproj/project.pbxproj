@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEFC255E183D831A00E3565A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC255D183D831A00E3565A /* Foundation.framework */; };
+		CEFC2560183D831A00E3565A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC255F183D831A00E3565A /* CoreGraphics.framework */; };
+		CEFC2562183D831A00E3565A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC2561183D831A00E3565A /* UIKit.framework */; };
+		CEFC2568183D831A00E3565A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEFC2566183D831A00E3565A /* InfoPlist.strings */; };
+		CEFC256A183D831A00E3565A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC2569183D831A00E3565A /* main.m */; };
+		CEFC256E183D831A00E3565A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC256D183D831A00E3565A /* AppDelegate.m */; };
+		CEFC2571183D831A00E3565A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFC256F183D831A00E3565A /* Main.storyboard */; };
+		CEFC2574183D831A00E3565A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC2573183D831A00E3565A /* ViewController.m */; };
+		CEFC2576183D831A00E3565A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFC2575183D831A00E3565A /* Images.xcassets */; };
+		CEFC257D183D831A00E3565A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC257C183D831A00E3565A /* XCTest.framework */; };
+		CEFC257E183D831A00E3565A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC255D183D831A00E3565A /* Foundation.framework */; };
+		CEFC257F183D831A00E3565A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC2561183D831A00E3565A /* UIKit.framework */; };
+		CEFC2587183D831A00E3565A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEFC2585183D831A00E3565A /* InfoPlist.strings */; };
+		CEFC2589183D831A00E3565A /* ChordProgressorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC2588183D831A00E3565A /* ChordProgressorUITests.m */; };
+		CEFC2594183D838F00E3565A /* BarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC2593183D838F00E3565A /* BarView.m */; };
+		CEFC2596183D85B200E3565A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC2595183D85B200E3565A /* QuartzCore.framework */; };
+		CEFC2599183D8A1A00E3565A /* ChordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC2598183D8A1A00E3565A /* ChordButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEFC2580183D831A00E3565A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFC2552183D831A00E3565A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFC2559183D831A00E3565A;
+			remoteInfo = ChordProgressorUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEFC255A183D831A00E3565A /* ChordProgressorUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChordProgressorUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFC255D183D831A00E3565A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEFC255F183D831A00E3565A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEFC2561183D831A00E3565A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEFC2565183D831A00E3565A /* ChordProgressorUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChordProgressorUI-Info.plist"; sourceTree = "<group>"; };
+		CEFC2567183D831A00E3565A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEFC2569183D831A00E3565A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEFC256B183D831A00E3565A /* ChordProgressorUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChordProgressorUI-Prefix.pch"; sourceTree = "<group>"; };
+		CEFC256C183D831A00E3565A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEFC256D183D831A00E3565A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEFC2570183D831A00E3565A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEFC2572183D831A00E3565A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEFC2573183D831A00E3565A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEFC2575183D831A00E3565A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEFC257B183D831A00E3565A /* ChordProgressorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChordProgressorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFC257C183D831A00E3565A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CEFC2584183D831A00E3565A /* ChordProgressorUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChordProgressorUITests-Info.plist"; sourceTree = "<group>"; };
+		CEFC2586183D831A00E3565A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEFC2588183D831A00E3565A /* ChordProgressorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChordProgressorUITests.m; sourceTree = "<group>"; };
+		CEFC2592183D838F00E3565A /* BarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarView.h; sourceTree = "<group>"; };
+		CEFC2593183D838F00E3565A /* BarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarView.m; sourceTree = "<group>"; };
+		CEFC2595183D85B200E3565A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CEFC2597183D8A1A00E3565A /* ChordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChordButton.h; sourceTree = "<group>"; };
+		CEFC2598183D8A1A00E3565A /* ChordButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChordButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEFC2557183D831A00E3565A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC2596183D85B200E3565A /* QuartzCore.framework in Frameworks */,
+				CEFC2560183D831A00E3565A /* CoreGraphics.framework in Frameworks */,
+				CEFC2562183D831A00E3565A /* UIKit.framework in Frameworks */,
+				CEFC255E183D831A00E3565A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFC2578183D831A00E3565A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC257D183D831A00E3565A /* XCTest.framework in Frameworks */,
+				CEFC257F183D831A00E3565A /* UIKit.framework in Frameworks */,
+				CEFC257E183D831A00E3565A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEFC2551183D831A00E3565A = {
+			isa = PBXGroup;
+			children = (
+				CEFC2563183D831A00E3565A /* ChordProgressorUI */,
+				CEFC2582183D831A00E3565A /* ChordProgressorUITests */,
+				CEFC255C183D831A00E3565A /* Frameworks */,
+				CEFC255B183D831A00E3565A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEFC255B183D831A00E3565A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC255A183D831A00E3565A /* ChordProgressorUI.app */,
+				CEFC257B183D831A00E3565A /* ChordProgressorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEFC255C183D831A00E3565A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC2595183D85B200E3565A /* QuartzCore.framework */,
+				CEFC255D183D831A00E3565A /* Foundation.framework */,
+				CEFC255F183D831A00E3565A /* CoreGraphics.framework */,
+				CEFC2561183D831A00E3565A /* UIKit.framework */,
+				CEFC257C183D831A00E3565A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEFC2563183D831A00E3565A /* ChordProgressorUI */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC256C183D831A00E3565A /* AppDelegate.h */,
+				CEFC256D183D831A00E3565A /* AppDelegate.m */,
+				CEFC256F183D831A00E3565A /* Main.storyboard */,
+				CEFC2572183D831A00E3565A /* ViewController.h */,
+				CEFC2573183D831A00E3565A /* ViewController.m */,
+				CEFC2575183D831A00E3565A /* Images.xcassets */,
+				CEFC2564183D831A00E3565A /* Supporting Files */,
+				CEFC2592183D838F00E3565A /* BarView.h */,
+				CEFC2593183D838F00E3565A /* BarView.m */,
+				CEFC2597183D8A1A00E3565A /* ChordButton.h */,
+				CEFC2598183D8A1A00E3565A /* ChordButton.m */,
+			);
+			path = ChordProgressorUI;
+			sourceTree = "<group>";
+		};
+		CEFC2564183D831A00E3565A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC2565183D831A00E3565A /* ChordProgressorUI-Info.plist */,
+				CEFC2566183D831A00E3565A /* InfoPlist.strings */,
+				CEFC2569183D831A00E3565A /* main.m */,
+				CEFC256B183D831A00E3565A /* ChordProgressorUI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEFC2582183D831A00E3565A /* ChordProgressorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC2588183D831A00E3565A /* ChordProgressorUITests.m */,
+				CEFC2583183D831A00E3565A /* Supporting Files */,
+			);
+			path = ChordProgressorUITests;
+			sourceTree = "<group>";
+		};
+		CEFC2583183D831A00E3565A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC2584183D831A00E3565A /* ChordProgressorUITests-Info.plist */,
+				CEFC2585183D831A00E3565A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEFC2559183D831A00E3565A /* ChordProgressorUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFC258C183D831A00E3565A /* Build configuration list for PBXNativeTarget "ChordProgressorUI" */;
+			buildPhases = (
+				CEFC2556183D831A00E3565A /* Sources */,
+				CEFC2557183D831A00E3565A /* Frameworks */,
+				CEFC2558183D831A00E3565A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChordProgressorUI;
+			productName = ChordProgressorUI;
+			productReference = CEFC255A183D831A00E3565A /* ChordProgressorUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEFC257A183D831A00E3565A /* ChordProgressorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFC258F183D831A00E3565A /* Build configuration list for PBXNativeTarget "ChordProgressorUITests" */;
+			buildPhases = (
+				CEFC2577183D831A00E3565A /* Sources */,
+				CEFC2578183D831A00E3565A /* Frameworks */,
+				CEFC2579183D831A00E3565A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEFC2581183D831A00E3565A /* PBXTargetDependency */,
+			);
+			name = ChordProgressorUITests;
+			productName = ChordProgressorUITests;
+			productReference = CEFC257B183D831A00E3565A /* ChordProgressorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEFC2552183D831A00E3565A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = dellerbie;
+				TargetAttributes = {
+					CEFC257A183D831A00E3565A = {
+						TestTargetID = CEFC2559183D831A00E3565A;
+					};
+				};
+			};
+			buildConfigurationList = CEFC2555183D831A00E3565A /* Build configuration list for PBXProject "ChordProgressorUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEFC2551183D831A00E3565A;
+			productRefGroup = CEFC255B183D831A00E3565A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEFC2559183D831A00E3565A /* ChordProgressorUI */,
+				CEFC257A183D831A00E3565A /* ChordProgressorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEFC2558183D831A00E3565A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC2576183D831A00E3565A /* Images.xcassets in Resources */,
+				CEFC2568183D831A00E3565A /* InfoPlist.strings in Resources */,
+				CEFC2571183D831A00E3565A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFC2579183D831A00E3565A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC2587183D831A00E3565A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEFC2556183D831A00E3565A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC2594183D838F00E3565A /* BarView.m in Sources */,
+				CEFC2574183D831A00E3565A /* ViewController.m in Sources */,
+				CEFC256E183D831A00E3565A /* AppDelegate.m in Sources */,
+				CEFC2599183D8A1A00E3565A /* ChordButton.m in Sources */,
+				CEFC256A183D831A00E3565A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFC2577183D831A00E3565A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC2589183D831A00E3565A /* ChordProgressorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEFC2581183D831A00E3565A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFC2559183D831A00E3565A /* ChordProgressorUI */;
+			targetProxy = CEFC2580183D831A00E3565A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEFC2566183D831A00E3565A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFC2567183D831A00E3565A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEFC256F183D831A00E3565A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFC2570183D831A00E3565A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEFC2585183D831A00E3565A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFC2586183D831A00E3565A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEFC258A183D831A00E3565A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEFC258B183D831A00E3565A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEFC258D183D831A00E3565A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChordProgressorUI/ChordProgressorUI-Prefix.pch";
+				INFOPLIST_FILE = "ChordProgressorUI/ChordProgressorUI-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEFC258E183D831A00E3565A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChordProgressorUI/ChordProgressorUI-Prefix.pch";
+				INFOPLIST_FILE = "ChordProgressorUI/ChordProgressorUI-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CEFC2590183D831A00E3565A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChordProgressorUI.app/ChordProgressorUI";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChordProgressorUI/ChordProgressorUI-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ChordProgressorUITests/ChordProgressorUITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CEFC2591183D831A00E3565A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChordProgressorUI.app/ChordProgressorUI";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChordProgressorUI/ChordProgressorUI-Prefix.pch";
+				INFOPLIST_FILE = "ChordProgressorUITests/ChordProgressorUITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEFC2555183D831A00E3565A /* Build configuration list for PBXProject "ChordProgressorUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFC258A183D831A00E3565A /* Debug */,
+				CEFC258B183D831A00E3565A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFC258C183D831A00E3565A /* Build configuration list for PBXNativeTarget "ChordProgressorUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFC258D183D831A00E3565A /* Debug */,
+				CEFC258E183D831A00E3565A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEFC258F183D831A00E3565A /* Build configuration list for PBXNativeTarget "ChordProgressorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFC2590183D831A00E3565A /* Debug */,
+				CEFC2591183D831A00E3565A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEFC2552183D831A00E3565A /* Project object */;
+}
