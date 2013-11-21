@@ -476,6 +476,7 @@
 				CEFC258E183D831A00E3565A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFC258F183D831A00E3565A /* Build configuration list for PBXNativeTarget "ChordProgressorUITests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +485,7 @@
 				CEFC2591183D831A00E3565A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

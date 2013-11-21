@@ -7,26 +7,47 @@
 //
 
 #import "BarView.h"
+#import "ChordButton.h"
+
+#define LEFT_RIGHT_PADDING (8.0)
+#define CHORD_SPACING (3.0)
+#define STROKE_SIZE (2.0)
+#define CHORD_BUTTON_SIZE (78.0)
 
 @implementation BarView
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-      self.layer.borderColor = [[UIColor colorWithRed:TO_RGB(54) green:TO_RGB(54) blue:TO_RGB(54) alpha:1.0] CGColor];
-      self.layer.borderWidth = 2.0f;
-    }
-    return self;
+  self = [super initWithFrame:frame];
+  if(self)
+  {
+    self.layer.borderColor = [STROKE_COLOR CGColor];
+    self.layer.borderWidth = STROKE_SIZE;
+    
+    CGFloat buttonX = LEFT_RIGHT_PADDING;
+    CGFloat buttonY = (self.frame.origin.y + (self.frame.size.height / 2)) - CHORD_BUTTON_SIZE;
+    
+    self.chordOneButton = [[ChordButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, WIDTH(CHORD_BUTTON_SIZE), HEIGHT(CHORD_BUTTON_SIZE))];
+    [self.chordOneButton setTitle:@"VIIb" forState:UIControlStateNormal];
+    
+    buttonX += CHORD_BUTTON_SIZE/2 + CHORD_SPACING;
+    self.chordTwoButton = [[ChordButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, WIDTH(CHORD_BUTTON_SIZE), HEIGHT(CHORD_BUTTON_SIZE))];
+    [self.chordTwoButton setTitle:@"/" forState:UIControlStateNormal];
+    
+    buttonX += CHORD_BUTTON_SIZE/2 + CHORD_SPACING;
+    self.chordThreeButton = [[ChordButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, WIDTH(CHORD_BUTTON_SIZE), HEIGHT(CHORD_BUTTON_SIZE))];
+    [self.chordThreeButton setTitle:@"I" forState:UIControlStateNormal];
+    
+    buttonX += CHORD_BUTTON_SIZE/2 + CHORD_SPACING;
+    self.chordFourButton = [[ChordButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, WIDTH(CHORD_BUTTON_SIZE), HEIGHT(CHORD_BUTTON_SIZE))];
+    [self.chordFourButton setTitle:@"ii" forState:UIControlStateNormal];
+    
+    [self addSubview:self.chordOneButton];
+    [self addSubview:self.chordTwoButton];
+    [self addSubview:self.chordThreeButton];
+    [self addSubview:self.chordFourButton];
+  }
+  return self;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

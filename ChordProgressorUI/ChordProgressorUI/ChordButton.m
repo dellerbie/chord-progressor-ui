@@ -8,11 +8,12 @@
 
 #import "ChordButton.h"
 
-@interface ChordButton ()
+#define FONT_SIZE (16)
+#define STROKE_SIZE (2.0)
 
+@interface ChordButton ()
 @property (nonatomic, strong) UIColor *strokeColor;
 @property (nonatomic, strong) UIColor *fillColor;
-
 @end
 
 @implementation ChordButton
@@ -22,11 +23,11 @@
   self = [super initWithFrame:frame];
   if(self)
   {
-    self.fillColor = [UIColor colorWithRed:TO_RGB(37) green:TO_RGB(37) blue:TO_RGB(37) alpha:1.0];
-    self.strokeColor = [UIColor colorWithRed:TO_RGB(54) green:TO_RGB(54) blue:TO_RGB(54) alpha:1.0];
-    self.titleLabel.font = [UIFont fontWithName:@"AvenirNextCondensed-Medium" size:30];
-    [self setTitleColor:[UIColor colorWithRed:TO_RGB(183) green:TO_RGB(183) blue:TO_RGB(183) alpha:1.0] forState:UIControlStateNormal];
-    [self setTitleColor:[UIColor colorWithRed:TO_RGB(255) green:TO_RGB(255) blue:TO_RGB(255) alpha:1.0] forState:UIControlStateHighlighted];
+    self.fillColor = CHORD_BG_COLOR;
+    self.strokeColor = STROKE_COLOR;
+    self.titleLabel.font = [UIFont fontWithName:@"AvenirNextCondensed-Medium" size:FONT_SIZE];
+    [self setTitleColor:MAIN_FONT_COLOR forState:UIControlStateNormal];
+    [self setTitleColor:WHITE_COLOR forState:UIControlStateHighlighted];
   }
   return self;
 }
@@ -36,25 +37,40 @@
   CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
   CGContextRef context = UIGraphicsGetCurrentContext();
   
-  CGRect buttonRect = CGRectMake(self.bounds.origin.x + 2.0, self.bounds.origin.y + 2.0, self.bounds.size.width - 4.0, self.bounds.size.height - 4.0);
-  
-  UIBezierPath *circleShapePath = [UIBezierPath bezierPathWithOvalInRect:buttonRect];
+  CGRect buttonRect = CGRectMake(self.bounds.origin.x + STROKE_SIZE, self.bounds.origin.y + STROKE_SIZE, self.bounds.size.width - STROKE_SIZE * 2, self.bounds.size.height - STROKE_SIZE * 2);
   
   CGContextSaveGState(context);
   
+  UIBezierPath *circleShapePath = [UIBezierPath bezierPathWithOvalInRect:buttonRect];
   [circleShapePath addClip];
+  
+  if(self.isHighlighted)
+  {
+    self.fillColor = RED_COLOR;
+  }
+  else
+  {
+    self.fillColor = CHORD_BG_COLOR;
+  }
   
   [self.fillColor setFill];
   CGContextFillRect(context, buttonRect);
   CGContextRestoreGState(context);
-  [self.strokeColor setStroke];
-  [circleShapePath setLineWidth:2.0];
-  [circleShapePath stroke];
   
-  
+  if(!self.isHighlighted)
+  {
+    [self.strokeColor setStroke];
+    [circleShapePath setLineWidth:STROKE_SIZE];
+    [circleShapePath stroke];
+  }
+
   CGColorSpaceRelease(colorSpace);
 }
 
-// override setHighlighted to change the fillColor and strokeColor
+- (void)setHighlighted:(BOOL)highlighted
+{
+  [super setHighlighted:highlighted];
+  [self setNeedsDisplay];
+}
 
 @end
