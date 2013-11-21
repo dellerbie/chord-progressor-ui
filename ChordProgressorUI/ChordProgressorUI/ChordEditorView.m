@@ -19,6 +19,8 @@
 #define CE_CHORD_TYPE_BUTTON_WIDTH (65.0)
 #define CE_CHORD_TYPE_BUTTON_HEIGHT (30.0)
 #define CE_CHORD_STROKE_SIZE (1.0)
+#define CE_DISMISS_BUTTON_TOP CE_PADDING_LEFT_RIGHT
+#define CE_DISMISS_BUTTON_SIZE (8.0)
 
 @implementation ChordEditorView
 
@@ -30,6 +32,8 @@
     self.layer.borderColor = [CHORD_EDITOR_STROKE_COLOR CGColor];
     self.layer.borderWidth = DEFAULT_STROKE_SIZE;
     self.backgroundColor = CHORD_BG_COLOR;
+    
+    // header labels
     
     NSDictionary *headerAttributes = @{ NSFontAttributeName : DEFAULT_FONT, NSForegroundColorAttributeName : CHORD_EDITOR_FONT_COLOR };
     
@@ -50,6 +54,8 @@
     CGSize chordTypesLabelSize = [chordTypesText sizeWithAttributes:headerAttributes];
     self.chordTypesLabel.frame = CGRectMake(self.chordRootsLabel.frame.origin.x + self.chordRootsLabel.frame.size.width + CE_HEADER_SPACING, CE_PADDING_TOP, chordTypesLabelSize.width, chordTypesLabelSize.height);
     [self addSubview:self.chordTypesLabel];
+    
+    // chord buttons
     
     CGFloat chordButtonX = CE_PADDING_LEFT_RIGHT;
     CGFloat chordButtonY = self.chordRootsLabel.frame.origin.y + chordRootsLabelSize.height + CE_HEADER_BOTTOM_SPACING;
@@ -74,6 +80,8 @@
       [self addSubview:chordButton];
     }
     
+    // chord types
+    
     CGRect chordTypesLabelFrame = self.chordTypesLabel.frame;
     self.majorChordTypeButton = [[CPRoundedRectButton alloc] initWithFrame:CGRectMake(chordTypesLabelFrame.origin.x, chordTypesLabelFrame.origin.y + chordTypesLabelSize.height + CE_HEADER_BOTTOM_SPACING, CE_CHORD_TYPE_BUTTON_WIDTH, CE_CHORD_TYPE_BUTTON_HEIGHT)];
     self.majorChordTypeButton.fontSize = CE_MAIN_FONT_SIZE;
@@ -90,6 +98,11 @@
     [self.dominantChordTypeButton setTitle:@"Dominant" forState:UIControlStateNormal];
     [self addSubview:self.dominantChordTypeButton];
     
+    // dismiss button
+    
+    self.dismissButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width - CE_DISMISS_BUTTON_SIZE - CE_PADDING_LEFT_RIGHT, CE_DISMISS_BUTTON_TOP, CE_DISMISS_BUTTON_SIZE, CE_DISMISS_BUTTON_SIZE)];
+    [self.dismissButton setBackgroundImage:[UIImage imageNamed:@"dismiss"] forState:UIControlStateNormal];
+    [self addSubview:self.dismissButton];
   }
   return self;
 }

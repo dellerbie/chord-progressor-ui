@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CED2ED57183EC6910017C401 /* dismiss-touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED48183EC6910017C401 /* dismiss-touch@2x.png */; };
+		CED2ED58183EC6910017C401 /* dismiss@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED49183EC6910017C401 /* dismiss@2x.png */; };
+		CED2ED59183EC6910017C401 /* fast-forward-touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED4A183EC6910017C401 /* fast-forward-touch@2x.png */; };
+		CED2ED5A183EC6910017C401 /* fast-forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED4B183EC6910017C401 /* fast-forward@2x.png */; };
+		CED2ED5B183EC6910017C401 /* info-touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED4C183EC6910017C401 /* info-touch@2x.png */; };
+		CED2ED5C183EC6910017C401 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED4D183EC6910017C401 /* info@2x.png */; };
+		CED2ED5D183EC6910017C401 /* locate-touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED4E183EC6910017C401 /* locate-touch@2x.png */; };
+		CED2ED5E183EC6910017C401 /* locate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED4F183EC6910017C401 /* locate@2x.png */; };
+		CED2ED5F183EC6910017C401 /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED50183EC6910017C401 /* pause@2x.png */; };
+		CED2ED60183EC6910017C401 /* play-touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED51183EC6910017C401 /* play-touch@2x.png */; };
+		CED2ED61183EC6910017C401 /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED52183EC6910017C401 /* play@2x.png */; };
+		CED2ED62183EC6910017C401 /* restart-touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED53183EC6910017C401 /* restart-touch@2x.png */; };
+		CED2ED63183EC6910017C401 /* restart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED54183EC6910017C401 /* restart@2x.png */; };
+		CED2ED64183EC6910017C401 /* rewind-touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED55183EC6910017C401 /* rewind-touch@2x.png */; };
+		CED2ED65183EC6910017C401 /* rewind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED56183EC6910017C401 /* rewind@2x.png */; };
 		CEFC255E183D831A00E3565A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC255D183D831A00E3565A /* Foundation.framework */; };
 		CEFC2560183D831A00E3565A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC255F183D831A00E3565A /* CoreGraphics.framework */; };
 		CEFC2562183D831A00E3565A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC2561183D831A00E3565A /* UIKit.framework */; };
@@ -39,6 +54,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CED2ED48183EC6910017C401 /* dismiss-touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dismiss-touch@2x.png"; sourceTree = "<group>"; };
+		CED2ED49183EC6910017C401 /* dismiss@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dismiss@2x.png"; sourceTree = "<group>"; };
+		CED2ED4A183EC6910017C401 /* fast-forward-touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fast-forward-touch@2x.png"; sourceTree = "<group>"; };
+		CED2ED4B183EC6910017C401 /* fast-forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fast-forward@2x.png"; sourceTree = "<group>"; };
+		CED2ED4C183EC6910017C401 /* info-touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-touch@2x.png"; sourceTree = "<group>"; };
+		CED2ED4D183EC6910017C401 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
+		CED2ED4E183EC6910017C401 /* locate-touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locate-touch@2x.png"; sourceTree = "<group>"; };
+		CED2ED4F183EC6910017C401 /* locate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locate@2x.png"; sourceTree = "<group>"; };
+		CED2ED50183EC6910017C401 /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@2x.png"; sourceTree = "<group>"; };
+		CED2ED51183EC6910017C401 /* play-touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-touch@2x.png"; sourceTree = "<group>"; };
+		CED2ED52183EC6910017C401 /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
+		CED2ED53183EC6910017C401 /* restart-touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restart-touch@2x.png"; sourceTree = "<group>"; };
+		CED2ED54183EC6910017C401 /* restart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restart@2x.png"; sourceTree = "<group>"; };
+		CED2ED55183EC6910017C401 /* rewind-touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rewind-touch@2x.png"; sourceTree = "<group>"; };
+		CED2ED56183EC6910017C401 /* rewind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rewind@2x.png"; sourceTree = "<group>"; };
 		CEFC255A183D831A00E3565A /* ChordProgressorUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChordProgressorUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFC255D183D831A00E3565A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEFC255F183D831A00E3565A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,6 +124,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CED2ED47183EC6810017C401 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				CED2ED48183EC6910017C401 /* dismiss-touch@2x.png */,
+				CED2ED49183EC6910017C401 /* dismiss@2x.png */,
+				CED2ED4A183EC6910017C401 /* fast-forward-touch@2x.png */,
+				CED2ED4B183EC6910017C401 /* fast-forward@2x.png */,
+				CED2ED4C183EC6910017C401 /* info-touch@2x.png */,
+				CED2ED4D183EC6910017C401 /* info@2x.png */,
+				CED2ED4E183EC6910017C401 /* locate-touch@2x.png */,
+				CED2ED4F183EC6910017C401 /* locate@2x.png */,
+				CED2ED50183EC6910017C401 /* pause@2x.png */,
+				CED2ED51183EC6910017C401 /* play-touch@2x.png */,
+				CED2ED52183EC6910017C401 /* play@2x.png */,
+				CED2ED53183EC6910017C401 /* restart-touch@2x.png */,
+				CED2ED54183EC6910017C401 /* restart@2x.png */,
+				CED2ED55183EC6910017C401 /* rewind-touch@2x.png */,
+				CED2ED56183EC6910017C401 /* rewind@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		CEFC2551183D831A00E3565A = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +180,7 @@
 		CEFC2563183D831A00E3565A /* ChordProgressorUI */ = {
 			isa = PBXGroup;
 			children = (
+				CED2ED47183EC6810017C401 /* Icons */,
 				CEFC256C183D831A00E3565A /* AppDelegate.h */,
 				CEFC256D183D831A00E3565A /* AppDelegate.m */,
 				CEFC256F183D831A00E3565A /* Main.storyboard */,
@@ -252,9 +305,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED2ED64183EC6910017C401 /* rewind-touch@2x.png in Resources */,
+				CED2ED63183EC6910017C401 /* restart@2x.png in Resources */,
+				CED2ED61183EC6910017C401 /* play@2x.png in Resources */,
+				CED2ED5D183EC6910017C401 /* locate-touch@2x.png in Resources */,
+				CED2ED62183EC6910017C401 /* restart-touch@2x.png in Resources */,
 				CEFC2576183D831A00E3565A /* Images.xcassets in Resources */,
+				CED2ED57183EC6910017C401 /* dismiss-touch@2x.png in Resources */,
+				CED2ED5B183EC6910017C401 /* info-touch@2x.png in Resources */,
+				CED2ED59183EC6910017C401 /* fast-forward-touch@2x.png in Resources */,
+				CED2ED58183EC6910017C401 /* dismiss@2x.png in Resources */,
 				CEFC2568183D831A00E3565A /* InfoPlist.strings in Resources */,
+				CED2ED65183EC6910017C401 /* rewind@2x.png in Resources */,
+				CED2ED5F183EC6910017C401 /* pause@2x.png in Resources */,
+				CED2ED5E183EC6910017C401 /* locate@2x.png in Resources */,
+				CED2ED5C183EC6910017C401 /* info@2x.png in Resources */,
+				CED2ED60183EC6910017C401 /* play-touch@2x.png in Resources */,
 				CEFC2571183D831A00E3565A /* Main.storyboard in Resources */,
+				CED2ED5A183EC6910017C401 /* fast-forward@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

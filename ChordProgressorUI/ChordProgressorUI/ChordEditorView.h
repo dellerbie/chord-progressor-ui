@@ -28,5 +28,6 @@
 @property (nonatomic, strong) CPRoundedRectButton *majorChordTypeButton;
 @property (nonatomic, strong) CPRoundedRectButton *minorChordTypeButton;
 @property (nonatomic, strong) CPRoundedRectButton *dominantChordTypeButton;
+@property (nonatomic, strong) UIButton *dismissButton;
 
 @end
