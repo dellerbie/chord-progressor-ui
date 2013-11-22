@@ -100,7 +100,7 @@
     
     // dismiss button
     
-    self.dismissButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width - CE_DISMISS_BUTTON_SIZE - CE_PADDING_LEFT_RIGHT, CE_DISMISS_BUTTON_TOP, CE_DISMISS_BUTTON_SIZE, CE_DISMISS_BUTTON_SIZE)];
+    self.dismissButton = [[UIButton alloc] initWithFrame:CGRectMake(self.bounds.size.width - CE_DISMISS_BUTTON_SIZE - CE_PADDING_LEFT_RIGHT, CE_DISMISS_BUTTON_TOP, CE_DISMISS_BUTTON_SIZE, CE_DISMISS_BUTTON_SIZE)];
     [self.dismissButton setBackgroundImage:[UIImage imageNamed:@"dismiss"] forState:UIControlStateNormal];
     [self addSubview:self.dismissButton];
   }

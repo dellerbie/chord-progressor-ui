@@ -22,26 +22,27 @@
   {
     self.layer.borderColor = [STROKE_COLOR CGColor];
     self.layer.borderWidth = DEFAULT_STROKE_SIZE;
+    self.backgroundColor = BLACK_COLOR;
     
     CGFloat buttonX = LEFT_RIGHT_PADDING;
-    CGFloat buttonY = (self.frame.origin.y + (self.frame.size.height / 2)) - CHORD_BUTTON_SIZE;
+    CGFloat buttonY = (self.bounds.origin.y + (self.bounds.size.height / 2)) - (HEIGHT(CHORD_BUTTON_SIZE) / 2);
     
     self.chordOneButton = [[ChordButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, WIDTH(CHORD_BUTTON_SIZE), HEIGHT(CHORD_BUTTON_SIZE))];
     [self.chordOneButton setTitle:@"VIIb" forState:UIControlStateNormal];
+    [self addSubview:self.chordOneButton];
     
-    buttonX += CHORD_BUTTON_SIZE/2 + CHORD_SPACING;
+    buttonX += WIDTH(CHORD_BUTTON_SIZE) + CHORD_SPACING;
     self.chordTwoButton = [[ChordButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, WIDTH(CHORD_BUTTON_SIZE), HEIGHT(CHORD_BUTTON_SIZE))];
     [self.chordTwoButton setTitle:@"/" forState:UIControlStateNormal];
     
-    buttonX += CHORD_BUTTON_SIZE/2 + CHORD_SPACING;
+    buttonX += WIDTH(CHORD_BUTTON_SIZE) + CHORD_SPACING;
     self.chordThreeButton = [[ChordButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, WIDTH(CHORD_BUTTON_SIZE), HEIGHT(CHORD_BUTTON_SIZE))];
     [self.chordThreeButton setTitle:@"I" forState:UIControlStateNormal];
     
-    buttonX += CHORD_BUTTON_SIZE/2 + CHORD_SPACING;
+    buttonX += WIDTH(CHORD_BUTTON_SIZE) + CHORD_SPACING;
     self.chordFourButton = [[ChordButton alloc] initWithFrame:CGRectMake(buttonX, buttonY, WIDTH(CHORD_BUTTON_SIZE), HEIGHT(CHORD_BUTTON_SIZE))];
     [self.chordFourButton setTitle:@"ii" forState:UIControlStateNormal];
     
-    [self addSubview:self.chordOneButton];
     [self addSubview:self.chordTwoButton];
     [self addSubview:self.chordThreeButton];
     [self addSubview:self.chordFourButton];
