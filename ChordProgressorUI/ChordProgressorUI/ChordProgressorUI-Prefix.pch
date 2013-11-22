@@ -15,9 +15,12 @@
   #import <Foundation/Foundation.h>
 #endif
 
+#define SCREEN_WIDTH 568
+#define SCREEN_HEIGHT 320
+
 #define TO_RGB(value) (value/255.0)
-#define HEIGHT(height) ceilf((height / 640.0) * 320.0)
-#define WIDTH(width) ceilf((width / 1136.0) * 568.0)
+#define HEIGHT(height) ceilf((height / 640.0) * SCREEN_HEIGHT)
+#define WIDTH(width) ceilf((width / 1136.0) * SCREEN_WIDTH)
 
 #define DEFAULT_FONT_SIZE (16.0)
 #define DEFAULT_STROKE_SIZE (2.0)

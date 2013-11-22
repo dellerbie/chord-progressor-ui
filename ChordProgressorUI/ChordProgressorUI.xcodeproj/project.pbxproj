@@ -22,6 +22,7 @@
 		CED2ED63183EC6910017C401 /* restart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED54183EC6910017C401 /* restart@2x.png */; };
 		CED2ED64183EC6910017C401 /* rewind-touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED55183EC6910017C401 /* rewind-touch@2x.png */; };
 		CED2ED65183EC6910017C401 /* rewind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED56183EC6910017C401 /* rewind@2x.png */; };
+		CED2ED68183EDB920017C401 /* CPToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = CED2ED67183EDB920017C401 /* CPToolbar.m */; };
 		CEFC255E183D831A00E3565A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC255D183D831A00E3565A /* Foundation.framework */; };
 		CEFC2560183D831A00E3565A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC255F183D831A00E3565A /* CoreGraphics.framework */; };
 		CEFC2562183D831A00E3565A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFC2561183D831A00E3565A /* UIKit.framework */; };
@@ -69,6 +70,8 @@
 		CED2ED54183EC6910017C401 /* restart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restart@2x.png"; sourceTree = "<group>"; };
 		CED2ED55183EC6910017C401 /* rewind-touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rewind-touch@2x.png"; sourceTree = "<group>"; };
 		CED2ED56183EC6910017C401 /* rewind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rewind@2x.png"; sourceTree = "<group>"; };
+		CED2ED66183EDB920017C401 /* CPToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPToolbar.h; sourceTree = "<group>"; };
+		CED2ED67183EDB920017C401 /* CPToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPToolbar.m; sourceTree = "<group>"; };
 		CEFC255A183D831A00E3565A /* ChordProgressorUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChordProgressorUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFC255D183D831A00E3565A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEFC255F183D831A00E3565A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -196,6 +199,8 @@
 				CEFC259B183E964D00E3565A /* ChordEditorView.m */,
 				CEFC259D183E9A2900E3565A /* CPRoundedRectButton.h */,
 				CEFC259E183E9A2900E3565A /* CPRoundedRectButton.m */,
+				CED2ED66183EDB920017C401 /* CPToolbar.h */,
+				CED2ED67183EDB920017C401 /* CPToolbar.m */,
 			);
 			path = ChordProgressorUI;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 				CEFC2574183D831A00E3565A /* ViewController.m in Sources */,
 				CEFC259F183E9A2900E3565A /* CPRoundedRectButton.m in Sources */,
 				CEFC259C183E964D00E3565A /* ChordEditorView.m in Sources */,
+				CED2ED68183EDB920017C401 /* CPToolbar.m in Sources */,
 				CEFC256E183D831A00E3565A /* AppDelegate.m in Sources */,
 				CEFC2599183D8A1A00E3565A /* ChordButton.m in Sources */,
 				CEFC256A183D831A00E3565A /* main.m in Sources */,
