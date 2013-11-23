@@ -21,6 +21,10 @@
 #define TOOLBAR_FONT_SIZE DEFAULT_FONT_SIZE - 3
 #define TOOLBAR_FONT [UIFont fontWithName:@"AvenirNextCondensed-Medium" size:TOOLBAR_FONT_SIZE]
 #define TOOLBAR_FONT_COLOR [UIColor colorWithRed:TO_RGB(178) green:TO_RGB(178) blue:TO_RGB(178) alpha:1.0]
+#define SAVE_LOAD_NEW_BUTTON_WIDTH (44)
+#define SAVE_LOAD_NEW_BUTTON_HEIGHT (22)
+#define SAVE_LOAD_NEW_BUTTON_SPACING (PLAYBACK_CONTROL_SPACING/2)
+#define KEY_BUTTON_SIZE (22)
 
 @implementation CPToolbar
 
@@ -88,11 +92,32 @@
     CGSize keyLabelSize = [keyText sizeWithAttributes:textAttributes];
     self.keyLabel.frame = CGRectMake(self.tempoSlider.frame.origin.x + self.tempoSlider.frame.size.width + COMPONENT_SPACING, 2, keyLabelSize.width, keyLabelSize.height);
     
-    self.keyButton = [[CPRoundedRectButton alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
+    self.keyButton = [[CPRoundedRectButton alloc] initWithFrame:CGRectMake(0, 0, KEY_BUTTON_SIZE, KEY_BUTTON_SIZE)];
     self.keyButton.fontSize = TOOLBAR_FONT_SIZE;
     [self.keyButton setTitle:@"Cb" forState:UIControlStateNormal];
     self.keyButton.center = self.keyLabel.center;
     self.keyButton.frame = CGRectMake(self.keyButton.frame.origin.x, self.keyButton.frame.origin.y + self.keyLabel.frame.size.height + 3, self.keyButton.frame.size.width, self.keyButton.frame.size.height);
+    
+    CGFloat saveLoadNewButtonsStartX = ((SAVE_LOAD_NEW_BUTTON_WIDTH + PLAYBACK_CONTROL_SPACING/2) * 3) + WIDTH(46) + PLAYBACK_CONTROL_SPACING;
+    
+    self.saveButton = [CPRoundedRectButton new];
+    self.saveButton.fontSize = TOOLBAR_FONT_SIZE;
+    [self.saveButton setTitle:@"SAVE" forState:UIControlStateNormal];
+    self.saveButton.frame = CGRectMake(self.bounds.size.width - saveLoadNewButtonsStartX, self.bounds.size.height/2 - SAVE_LOAD_NEW_BUTTON_HEIGHT/2 , SAVE_LOAD_NEW_BUTTON_WIDTH, SAVE_LOAD_NEW_BUTTON_HEIGHT);
+    
+    self.blankButton = [CPRoundedRectButton new];
+    self.blankButton.fontSize = TOOLBAR_FONT_SIZE;
+    [self.blankButton setTitle:@"NEW" forState:UIControlStateNormal];
+    self.blankButton.frame = CGRectMake(self.saveButton.frame.origin.x + self.saveButton.frame.size.width + SAVE_LOAD_NEW_BUTTON_SPACING, self.saveButton.frame.origin.y, SAVE_LOAD_NEW_BUTTON_WIDTH, SAVE_LOAD_NEW_BUTTON_HEIGHT);
+    
+    self.loadButton = [CPRoundedRectButton new];
+    self.loadButton.fontSize = TOOLBAR_FONT_SIZE;
+    [self.loadButton setTitle:@"LOAD" forState:UIControlStateNormal];
+    self.loadButton.frame = CGRectMake(self.blankButton.frame.origin.x + self.blankButton.frame.size.width + SAVE_LOAD_NEW_BUTTON_SPACING, self.blankButton.frame.origin.y, SAVE_LOAD_NEW_BUTTON_WIDTH, SAVE_LOAD_NEW_BUTTON_HEIGHT);
+    
+    self.infoButton = [[UIButton alloc] initWithFrame:CGRectMake(self.bounds.size.width - WIDTH(46) - LEFT_RIGHT_PADDING, self.loadButton.frame.origin.y, WIDTH(46), HEIGHT(45))];
+    [self.infoButton setBackgroundImage:[UIImage imageNamed:@"info"] forState:UIControlStateNormal];
+    [self.infoButton setBackgroundImage:[UIImage imageNamed:@"info-touch"] forState:UIControlStateHighlighted];
     
     [self addSubview:self.playButton];
     [self addSubview:self.rewindButton];
@@ -104,6 +129,10 @@
     [self addSubview:self.bpmLabel];
     [self addSubview:self.keyLabel];
     [self addSubview:self.keyButton];
+    [self addSubview:self.saveButton];
+    [self addSubview:self.blankButton];
+    [self addSubview:self.loadButton];
+    [self addSubview:self.infoButton];
   }
   return self;
 }
