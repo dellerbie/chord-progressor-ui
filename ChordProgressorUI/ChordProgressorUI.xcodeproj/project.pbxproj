@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49D0C42418401B3C00ABD8ED /* TempoSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0C42318401B3C00ABD8ED /* TempoSlider.m */; };
 		CED2ED57183EC6910017C401 /* dismiss-touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED48183EC6910017C401 /* dismiss-touch@2x.png */; };
 		CED2ED58183EC6910017C401 /* dismiss@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED49183EC6910017C401 /* dismiss@2x.png */; };
 		CED2ED59183EC6910017C401 /* fast-forward-touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2ED4A183EC6910017C401 /* fast-forward-touch@2x.png */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49D0C42218401B3C00ABD8ED /* TempoSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempoSlider.h; sourceTree = "<group>"; };
+		49D0C42318401B3C00ABD8ED /* TempoSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempoSlider.m; sourceTree = "<group>"; };
 		CED2ED48183EC6910017C401 /* dismiss-touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dismiss-touch@2x.png"; sourceTree = "<group>"; };
 		CED2ED49183EC6910017C401 /* dismiss@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dismiss@2x.png"; sourceTree = "<group>"; };
 		CED2ED4A183EC6910017C401 /* fast-forward-touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fast-forward-touch@2x.png"; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 				CEFC2592183D838F00E3565A /* BarView.h */,
 				CEFC2593183D838F00E3565A /* BarView.m */,
 				CEFC2597183D8A1A00E3565A /* ChordButton.h */,
+				49D0C42218401B3C00ABD8ED /* TempoSlider.h */,
+				49D0C42318401B3C00ABD8ED /* TempoSlider.m */,
 				CEFC2598183D8A1A00E3565A /* ChordButton.m */,
 				CEFC259A183E964D00E3565A /* ChordEditorView.h */,
 				CEFC259B183E964D00E3565A /* ChordEditorView.m */,
@@ -353,6 +358,7 @@
 				CED2ED68183EDB920017C401 /* CPToolbar.m in Sources */,
 				CEFC256E183D831A00E3565A /* AppDelegate.m in Sources */,
 				CEFC2599183D8A1A00E3565A /* ChordButton.m in Sources */,
+				49D0C42418401B3C00ABD8ED /* TempoSlider.m in Sources */,
 				CEFC256A183D831A00E3565A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

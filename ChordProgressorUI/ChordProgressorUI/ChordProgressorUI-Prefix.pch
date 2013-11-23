@@ -34,7 +34,6 @@
 #define MAIN_FONT_COLOR [UIColor colorWithRed:TO_RGB(183) green:TO_RGB(183) blue:TO_RGB(183) alpha:1.0]
 #define RED_COLOR [UIColor colorWithRed:TO_RGB(159) green:TO_RGB(29) blue:TO_RGB(9) alpha:1.0]
 #define WHITE_COLOR [UIColor colorWithRed:TO_RGB(255) green:TO_RGB(255) blue:TO_RGB(255) alpha:1.0]
-#define TOOLBAR_FONT_COLOR [UIColor colorWithRed:TO_RGB(125) green:TO_RGB(125) blue:TO_RGB(125) alpha:1.0]
 #define CHORD_EDITOR_STROKE_COLOR [UIColor colorWithRed:TO_RGB(172) green:TO_RGB(172) blue:TO_RGB(172) alpha:1.0]
 #define CHORD_EDITOR_FONT_COLOR [UIColor colorWithRed:TO_RGB(178) green:TO_RGB(178) blue:TO_RGB(178) alpha:1.0]
 
